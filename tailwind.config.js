@@ -19,6 +19,9 @@ module.exports = {
         lsecondary: "#f8f7f4",
         ltxt: "#6c757d",
       },
+      fontFamily: {
+        poppins: "Poppins",
+      },
       screens: {
         "2xl": "1320px",
         laptop: "1020px", // Tambahkan definisi layar "laptop"
