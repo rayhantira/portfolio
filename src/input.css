@@ -9,7 +9,7 @@
 }
 
 .hamburger-line {
-  @apply w-[21px] h-[3px] my-1 block dark:bg-primary bg-dark;
+  @apply w-[21px] h-[3px] my-1 block dark:bg-body bg-primary;
 }
 
 .hamburger-active > span:nth-child(1) {
@@ -35,7 +35,7 @@
 }
 
 .blinking {
-  animation: blink 0.5s infinite alternate;
+  animation: blink 1s infinite alternate;
   animation-delay: 1s;
 }
 
@@ -96,4 +96,18 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 300ms ease-in-out;
+}
+
+.hidee {
+  display: none;
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
 }

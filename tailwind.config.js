@@ -9,15 +9,17 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: "#6dd1ff",
-        lprimary: "#6c757d",
+        primary: "#76ABAE",
+        lprimary: "#677791",
         dark: "#212529",
-        body: "#f8f7f4",
+        body: "#EEEEEE",
         secondary: "#2b3035",
-        txt: "#cfcfcf",
-        nav: "#97999c",
-        lsecondary: "#f8f7f4",
-        ltxt: "#6c757d",
+        subhead: "#adadad",
+        lsubhead: "#868686",
+        lsecondary: "#F4F5F8",
+      },
+      backgroundImage: {
+        blob: `url("src/bg.png")`,
       },
       fontFamily: {
         poppins: "Poppins",
