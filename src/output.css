@@ -1918,6 +1918,11 @@ html {
     line-height: 2rem;
   }
 
+  .lg\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
   .lg\:text-4xl{
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -1928,8 +1933,8 @@ html {
     line-height: 1;
   }
 
-  .lg\:text-\[60px\]{
-    font-size: 60px;
+  .lg\:text-\[40px\]{
+    font-size: 40px;
   }
 
   .lg\:text-base{
@@ -1950,6 +1955,15 @@ html {
   .lg\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .lg\:text-6xl{
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .lg\:text-\[55px\]{
+    font-size: 55px;
   }
 
   .lg\:font-semibold{
@@ -2035,6 +2049,28 @@ html {
     line-height: 1.75rem;
   }
 
+  .xl\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .xl\:text-\[55px\]{
+    font-size: 55px;
+  }
+
+  .xl\:text-\[60px\]{
+    font-size: 60px;
+  }
+
+  .xl\:text-\[70px\]{
+    font-size: 70px;
+  }
+
+  .xl\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
   .xl\:leading-\[90px\]{
     line-height: 90px;
   }
@@ -2094,5 +2130,9 @@ html {
   .\32xl\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .\32xl\:text-\[90px\]{
+    font-size: 90px;
   }
 }
