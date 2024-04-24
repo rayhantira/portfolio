@@ -11,15 +11,12 @@ module.exports = {
       colors: {
         primary: "#76ABAE",
         lprimary: "#677791",
-        dark: "#212529",
-        body: "#EEEEEE",
-        secondary: "#2b3035",
-        subhead: "#adadad",
-        lsubhead: "#868686",
-        lsecondary: "#F4F5F8",
-      },
-      backgroundImage: {
-        blob: `url("src/bg.png")`,
+        dark: "#151515",
+        body: "#ffffff",
+        nav: "#e1e1e1",
+        subhead: "#8b8b8b",
+        lsubhead: "#929292",
+        cards: "#202022",
       },
       fontFamily: {
         poppins: "Poppins",
