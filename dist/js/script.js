@@ -1,3 +1,20 @@
+// Navbar Fixed
+window.onscroll = function () {
+  const header = document.querySelector("header");
+  const fixedNav = header.offsetTop;
+  const toTop = document.querySelector("#to-top");
+
+  if (window.pageYOffset > fixedNav) {
+    header.classList.add("navbar-fixed");
+    toTop.classList.remove("hidddden");
+    toTop.classList.add("flex");
+  } else {
+    header.classList.remove("navbar-fixed");
+    toTop.classList.remove("flex");
+    toTop.classList.add("hidddden");
+  }
+};
+
 // Hamburger
 const hamburger = document.querySelector("#hamburger");
 const navMenu = document.querySelector("#nav-menu");
@@ -5,7 +22,6 @@ const navMenu = document.querySelector("#nav-menu");
 hamburger.addEventListener("click", function () {
   hamburger.classList.toggle("hamburger-active");
   navMenu.classList.toggle("hidddden");
-  navMenu.classList.toggle("max-h-screen");
 });
 
 // Mendapatkan elemen dengan id "blinking"
@@ -25,7 +41,7 @@ const observer = new IntersectionObserver((entries) => {
   });
 });
 
-const hiddenElements = document.querySelectorAll(".hidden");
+const hiddenElements = document.querySelectorAll(".hiddden");
 hiddenElements.forEach((el) => observer.observe(el));
 
 document
@@ -84,7 +100,10 @@ window.addEventListener("load", (event) => {
   loadingIcon.parentNode.removeChild(loadingIcon);
 });
 
-// Mendapatkan semua tautan navbar untuk setiap tautan navbar
+/// Mendapatkan semua tautan navbar
+const navLinks = document.querySelectorAll(".nav-link");
+
+// Menambahkan event listener untuk setiap tautan navbar
 navLinks.forEach((link) => {
   link.addEventListener("click", () => {
     // Menghapus kelas "active" dari semua tautan navbar
