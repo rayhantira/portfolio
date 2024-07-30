@@ -51,7 +51,7 @@
 }
 
 .hamburger-line {
-  @apply w-[21px] h-[3px] my-1 block dark:bg-primary bg-dark;
+  @apply w-[21px] h-[3px] my-1 block dark:bg-dbody bg-dark;
 }
 
 @keyframes blink {

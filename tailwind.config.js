@@ -13,7 +13,7 @@ module.exports = {
         lprimary: "#677791",
         dark: "#0e1111",
         body: "#ffffff",
-        nav: "#e1e1e1",
+        dbody: "#ffffee",
         subhead: "#8b8b8b",
         lsubhead: "#929292",
         cards: "#202022",
