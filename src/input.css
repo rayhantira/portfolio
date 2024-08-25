@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Hamburger */
+.hamburger {
+  @apply cursor-pointer block lg:hidden;
+}
+
+.hamburger-active > span:nth-child(1) {
+  @apply rotate-45;
+}
+
+.hamburger-active > span:nth-child(2) {
+  @apply scale-0;
+}
+
+.hamburger-active > span:nth-child(3) {
+  @apply -rotate-45;
+}
+
+.nav-menu {
+  @apply hidden lg:flex lg:items-center;
+}
+
+.hidddden {
+  display: none;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.max-h-screen {
+  max-height: 100vh;
+  transition: max-height 0.3s ease-out;
+}
+
+.navbar-fixed {
+  @apply fixed z-[9999] bg-body bg-opacity-50 backdrop-blur dark:bg-dark dark:bg-opacity-50 shadow-2xl;
+}
+
+.hamburger-line {
+  @apply w-[21px] h-[3px] my-1 block dark:bg-dbody bg-dark;
+}
+
+@keyframes blink {
+  100% {
+    opacity: 0;
+  }
+}
+
+.blinking {
+  animation: blink 1s infinite alternate;
+  animation-delay: 1s;
+}
+
+.fullscreen-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fullscreen-image {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.loading-message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px; /* Perbaiki nilai font-size */
+}
+
+/* CSS untuk ikon loading */
+.loading-icon {
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#dark-toggle:checked ~ label div.toggle-circle {
+  @apply translate-x-8;
+}
+
+#dark-toggle:checked ~ label div.toggle-circlee {
+  @apply translate-x-8;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 300ms ease-in-out;
+}
+
+.hidee {
+  display: none;
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
